@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>單位</title>
+    <style>
+        .px16{
+            font-size: 16px;
+        }
+        .px20{
+            font-size: 20px;
+        }
+        .px24{
+            font-size: 24px;
+        }
+        .px32{
+            font-size: 32px;
+        }
+        .em1dot2{
+            font-size: 1.2em;
+        }
+        .rem1dot2{
+            font-size: 1.2rem;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- 1. px 是絕對單位 -->
+    <div class="px16">px16
+        <div class="px20">px20
+            <div class="px24">px24
+                <div class="px32">px32</div>
+            </div>
+        </div>
+    </div>
+    <!-- 2. em 是相對單位，子層相對於父層/倍數相乘(*父層的p的px) -->
+    <div class="em1dot2">em1.2
+        <div class="em1dot2">em1.2
+            <div class="em1dot2">em1.2
+                <div class="em1dot2">em1.2</div>
+            </div>
+        </div>
+    </div>
+    <!-- 3. rem 是相對單位，子層相對根元素，用倍數乘以元素的px -->
+    <div class="rem1dot2">rem1.2
+        <div class="rem1dot2">rem1.2
+            <div class="rem1dot2">rem1.2
+                <div class="rem1dot2">rem1.2</div>
+            </div>
+        </div>
+    </div>
+    <!--  % 與 em 類似 ...-->
+</body>
+</html>
